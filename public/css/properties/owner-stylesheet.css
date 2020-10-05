@@ -1,0 +1,1483 @@
+*{
+  box-sizing:border-box;
+	font-family: Nunito;
+  }
+@font-face{
+           font-family:Headingfont;
+           src:url("/fonts/Audiowide-Regular.ttf");
+           }
+@font-face{
+           font-family:taglinefont;
+           src:url("/fonts/Amaranth-Regular.ttf");
+           }
+@font-face{
+           font-family:Nunito;
+           src:url("/fonts/Nunito-Regular.ttf");
+         }
+@font-face{
+           font-family:Nunito;
+           src:url("/fonts/Nunito-Bold.ttf");
+           font-weight:bold;
+         }
+.container{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width:100%;
+  height:100%;
+  font-family:Nunito;
+}
+[class*="item"]{
+  display:flex;
+  flex-wrap: nowrap;
+  width:100%;
+}
+.tabcontent,.innertabcontent{
+  display:flex;
+  flex-wrap: nowrap;
+  width:100%;
+  flex-direction:column;
+  align-items:center;
+  min-height: 100vh;
+}
+.item1{
+  width:100%;
+  justify-content: space-between;
+  background: #fff;
+  height: 3rem;
+  border-bottom: 2px solid lightgrey;
+       }
+h1 {
+	box-sizing: border-box;
+	color:black;
+	font-family: Headingfont;
+	text-decoration: none;
+	font-weight: 100;
+	margin: 0px;
+	font-size: 1.7em;
+	height: 2rem;
+	margin-top: -0.3rem;
+}
+.categories {
+	width:25%;
+	height: 100%;
+}
+.tabButton {
+	background: none;
+	border: 0rem;
+	color: #000;
+	font-family: Nunito;
+	width: 100%;
+	height: 100%;
+	font-weight: bold;
+	font-size: 0.9rem;
+	cursor: pointer;
+	outline: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	color: #1a1a1a;
+}
+.activeTab{
+	border-top: 0.2rem solid #9d6925;
+	color: black;
+	background: linear-gradient(#f2f2f2,white);
+}
+.tab_icon{
+	width:1.75rem;
+	height: 1.75rem;
+}
+.innerTabButton{
+	width: 20%;
+	height: 2.5rem;
+	border: 0;
+	margin: 0.1rem;
+	border-radius: 0.1rem 0.5rem;
+	font-weight: bold;
+	font-size: 0.9rem;
+	background:#f0f0f0;
+	cursor: pointer;
+}
+.activeInnerTab{
+	background: burlywood;
+	color: white;
+}
+.header {
+	display: flex;
+	flex-wrap: nowrap;
+	width: 100%;
+	background-image: url('/images/budgetC.jpg');
+	background-size: cover;
+	background-position: center;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	height: 15rem;
+}
+.cardHolder {
+	height: 3rem;
+	margin: 0.5rem 0rem;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	display: flex;
+	flex-wrap: nowrap;
+	width: 100%;
+	padding: 0.6rem;
+}
+.tileContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+	width: 100%;
+	margin: 0rem;
+	min-height: 25rem;
+}
+.tile {
+	height: 24rem;
+	width: 49%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	background-color: white;
+	margin: 0.2rem;
+	border-radius: 0.1rem;
+	border: 1px solid lightgrey;
+	margin-bottom: 1rem;
+}
+html{
+  background-color:#fff;
+}
+body{
+  margin:0px;
+}
+.icon{
+      width:32px;
+      height:33px;
+      }
+.sidebar{
+  width:100%;
+  height:100%;
+}
+.greetings{
+  width:20rem;
+  display: flex;
+  flex-direction: column;
+  height:5rem;
+  justify-content: space-around;
+  margin: 0rem 1rem;
+}
+.welcome{
+  color:white;
+  font-size: 1.5em;
+  margin: 0rem;
+}
+.welcome strong {
+	font-weight: bold;
+}
+.text{
+  color:white;
+  margin: 0rem;
+}
+.notificationGroup {
+	display: flex;
+	justify-content: space-around;
+	width: 30%;
+	margin: 0rem 1rem;
+  height: 10rem;
+	align-items: center;
+}
+.notification {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+	width: 32%;
+	background: rgba(183,183,183,0.25);
+	border-radius: 0.2rem;
+}
+.figure {
+	color: white;
+	font-size: 1.5em;
+	margin: 0rem;
+}
+.title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0rem;
+	height: 2rem;
+}
+.notificationIcon {
+	width: 2rem;
+	height: 2rem;
+}
+.card {
+	width: 17.1rem;
+	height: 3rem;
+	background-color: #fff;
+	border-radius: 0.3rem;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+	padding: 0.5rem;
+	cursor: pointer;
+	margin: 0rem;
+	border: 2px solid lightgrey;
+}
+.cardIcon{
+  width:1.5rem;
+  height:1.5rem;
+  border-radius: 50%;
+}
+.banner {
+	font-weight: bold;
+	color: #20357e;
+}
+.user {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	height: 2.9rem;
+	width: 30%;
+	background: #fff;
+}
+.avatar{
+  width:2.5rem;
+  height:2.5rem;
+  border-radius: 50%;
+}
+.avatar ~ p {
+	font-weight: bold;
+	color: black;
+}
+
+.navlinks {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+	height: 3rem;
+	background: #fff;
+	align-items: center;
+	border-top: 1px solid lightgrey;
+	position: sticky;
+	bottom: 0rem;
+	z-index: 1;
+	width: 100%;
+}
+.footer{
+  height: 1.1rem;
+  position: absolute;
+  bottom: 0.1rem;
+  right: 0rem;
+  width: 87%;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 0rem;
+  font-family: Nunito;
+}
+.is-invalid{
+  border-color:red;
+}
+.input {
+	height: 2.1rem;
+	border-radius: 0.2rem;
+	border: 1px solid #909090;
+	width: 50%;
+}
+.errorContainer{
+  color:red;
+  display: inherit;
+  justify-content: center;
+  background: none;
+}
+.errorList {
+	list-style-type: none;
+	margin: 0rem;
+	padding: 0rem;
+}
+.textarea {
+	height: 5rem;
+	border: 1px solid #909090;
+	border-radius: 0.2rem;
+	width: 50%;
+}
+.formtext {
+	width: 100%;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	/*! justify-content: space-around; */
+	align-items: center;
+	background: white;
+	border-radius: 0.5rem;
+	overflow-y: auto;
+}
+.dropzone{
+	border-style: dashed;
+	margin-top: 1rem;
+	width: 80%;
+	display: block;
+	overflow-y: auto;
+	min-height: 25rem;
+}
+.inputContainer {
+	display: inherit;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	/*! height: 4rem; */
+	align-items: center;
+	width: 80%;
+	justify-content: space-around;
+	margin: 1rem 0rem;
+}
+.textfieldContainer {
+	display: inherit;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	height: 6rem;
+	align-items: center;
+	width: 80%;
+	justify-content: space-around;
+}
+label {
+	width: 20%;
+}
+.buttonContainer{
+	display: flex;
+	flex-direction: column-reverse;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-between;
+}
+.button {
+	background: #540000;
+	border: 0rem;
+	width: 3rem;
+	height: 2.5rem;
+	color: white;
+	padding: 0rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: 0rem;
+	border-radius: 0.2rem;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	cursor: pointer;
+	font-size: 0.85rem;
+}
+.button:hover{
+  opacity: 0.8;
+}
+.button input {
+	display: none;
+}
+.more-modal {
+	background: none;
+	display: none;
+}
+.logout {
+	width: 10rem;
+	background: #4b0195;
+}
+.show_bookings {
+	background: none;
+}
+.show_bookings img{
+	width:2.8rem;
+	height: 2.8rem;
+}
+.choose_community {
+	background: #c1c1c1;
+}
+.tabcontent h2 {
+	/*! font-weight: 100; */
+	margin: 0rem;
+}
+.create{
+	background: #202020;
+	width: 10rem;
+}
+.create img{
+width:16px;
+height:16px;
+}
+.edit{
+	background: #193d5c;
+}
+.disabled{
+	background:#b2b2b2;
+	cursor: unset;
+}
+.addedImage{
+	display: none;
+}
+.choose_community img {
+	width: 2.3rem;
+}
+.edit img {
+	width: 2rem;
+	height: 2rem;
+}
+.dataImage{
+	width: 4rem;
+	height: 4rem;
+	border-radius: 0.1rem;
+	object-fit: cover;
+	min-width: 4rem;
+	max-width: 4rem;
+	min-height: 4rem;
+	max-height: 4rem;
+}
+.pagination {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	font-weight: bold;
+	width: 25%;
+	background: #e3e3e3ab;
+	justify-content: space-between;
+	align-items: center;
+	height: 3rem;
+	/*! border: 2px solid brown; */
+	border-radius: 0.8rem;
+	padding: 1rem;
+	margin-left: auto;
+}
+.pagination li {
+	width: unset;
+}
+.dataContainer,.dataHeader{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.5rem 0.5rem;
+	border-bottom: 1px solid lightgrey;
+	height: 5rem;
+}
+.dataHeader > div:nth-of-type(1),.dataContainer > div:nth-of-type(1){
+  width:80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.dataHeader > div:nth-of-type(1) span,.dataContainer > div:nth-of-type(1) span{
+  width:25%;
+  display: inherit;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  font-weight:bold;
+}
+.delete img{
+  width:2rem;
+  height:2rem;
+}
+.view{
+	background: none;
+}
+.view img {
+	background: #fff;
+	border-radius: 0.2rem;
+	width: 3rem;
+	height: 3rem;
+}
+.show_units {
+	background: none;
+}
+.btn-grp{
+align-items: center;
+display: inherit;
+flex-direction: row;
+flex-wrap: nowrap;
+font-weight:bold;
+justify-content: space-around;
+width: 30%;
+color: grey;
+font-size: 0.85rem;
+}
+.overlay {
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0rem;
+	left: 0rem;
+	background: black;
+	opacity:0.5;
+	display:none;
+}
+.closeCreateForm img,.closeEditForm img,.closeModal img{
+	width: 2rem;
+	height: 2rem;
+	cursor: pointer;
+}
+.closeCreateForm,.closeEditForm,.closeModal{
+	display: none;
+	width: 2.5rem;
+	height: 2.5rem;
+	background: none;
+	border: 0px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	width: 100%;
+	align-items: center;
+	margin-bottom: -3rem;
+}
+.closeBtnGrp{
+	display: none;
+}
+#rentalCreateForm,#hostelCreateForm,#standaloneCreateForm,#workspaceCreateForm,#communityCreateForm,.editForm{
+	width: 55%;
+	display: none;
+  z-index: 2;
+  font-weight: bold;
+	position: fixed;
+	left: 22.5%;
+	top: 0rem;
+	height: 100vh;
+}
+.addImage{
+	width: 100%;
+	background: none;
+	height: 100%;
+	color: black;
+	font-weight: bold;
+	font-size: 1rem;
+	flex-direction: column;
+}
+.shortcuts {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	padding: 0rem 1rem;
+	margin: 1rem 0rem 0rem 0rem;
+}
+#createRental,#createHostel,#createStandalone,#createWorkspace,#createCommunity{
+	background: #202020;
+	width: 7rem;
+}
+.imageViewBox {
+	width: 100%;
+	display: inherit;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background: #f3f3f3;
+	padding: 1rem 0rem 0rem 0rem;
+}
+.imageContainer {
+	flex-direction: column;
+	width: 21rem;
+	margin: 0.4rem;
+}
+.additionContainer {
+	width: 45%;
+	border: 2px dotted lightgrey;
+	justify-content: center;
+	height: 11rem;
+	border-radius: 0.4rem;
+}
+.image {
+	width: 100%;
+	height: 11rem;
+	max-width: 100%;
+	max-height: 12rem;
+	min-height: 12rem;
+	min-width: 100%;
+	border-radius: 0.2rem;
+	object-fit: cover;
+}
+.coverImageSelect {
+	flex-direction: row;
+	width: 100%;
+}
+.imageInput{
+	display: none;
+}
+.changeImage{
+  width: 7rem;
+  background: #202020
+}
+.changeCoverImage {
+	width: 10rem;
+	background: #202020;
+}
+.imageDeleteButton{
+  width:6rem;
+}
+.profileEditForm {
+	width: 55%;
+	font-weight: bold;
+}
+.logoContainer{
+	display: flex;
+	flex-direction: column;
+	background: none;
+	width: 100%;
+	align-items: center;
+	justify-content: space-around;
+	/*! height: 12rem; */
+	margin: 0rem;
+}
+.inputContainer h4{
+	margin: 0rem;
+}
+.profileAvatar {
+	width: 8rem;
+	height: 8rem;
+	border-radius: 50%;
+}
+.list{
+	display: flex;
+	flex-direction:column;
+	flex-wrap: nowrap;
+	align-items: center;
+	width: 100%;
+}
+.list > span{
+  font-weight: bold;
+  color:grey;
+}
+.hiddenlink{
+  display: none;
+}
+.item {
+	display: flex;
+	width: 80%;
+	justify-content: space-between;
+	align-items: center;
+	height: 3rem;
+	border-bottom: 1px solid lightgray;
+}
+.modal{
+	width: 50%;
+	display: none;
+	z-index: 2;
+	font-weight: bold;
+	position: fixed;
+	left: 25%;
+	top: 50%;
+	background: #fff;
+	transform: translateY(-50%);
+	border-radius: 0.2rem;
+	height: 30rem;
+}
+.modalContent {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	overflow-y: auto;
+	height: 100%;
+}
+.disabled{
+	opacity: 0.5;
+}
+.disabled:hover{
+	opacity:0.55;
+}
+#calendar-container {
+	padding: 1rem;
+	width: 100%;
+	height: 100%;
+	margin: 0rem;
+}
+@media only screen and (max-width:399px){
+	h1{
+		font-size:1.5em
+	}
+	.item1{
+		flex-direction: column;
+		align-items: center;
+		border-bottom: 0px;
+		height: 2.5rem
+	}
+	.user{
+		display: none;
+	}
+	.header{
+		flex-direction: column;		
+		align-items: center;
+		height: 15rem;
+	}
+	.greetings{
+		width: 100%;
+		align-items: center;
+		margin: 0rem;
+	}
+	.welcome{
+		font-size: 1.2em;
+	}
+	.notificationGroup{
+		flex-direction: row;
+		width: 100%;
+		height: 11rem;
+		margin: 1rem 0rem;
+	}
+	.notification{		
+	width: 30%;
+	height: 80%;
+	padding: 1rem;
+	}
+	.notificationIcon{
+		width:1.7rem;
+		height:1.7rem;
+	}
+	.figure{
+		font-size: 1.2em;
+	}
+	.tabcontent > .shortcuts{
+		padding: 0rem 0.25rem;
+		margin: 1rem 0rem;
+		justify-content: center;
+	}
+	.shortcuts{
+		justify-content:flex-start;
+	}
+	.innerTabButton{
+		font-size: 0.6em;
+		margin: 0.1rem;
+		word-wrap: anywhere;
+		background: #f0f0f0;
+		border-radius: 0.1rem 0.5rem;
+		border: 0px;
+	}
+	.activeInnerTab{
+		background: burlywood;
+		border:0px;
+		color: #fff;
+	}
+	#createRental, #createHostel, #createStandalone, #createWorkspace, #createCommunity {
+	font-size: 0.6em;
+		height: 2rem;
+	width: 5rem;
+}
+	.dataContainer,.dataHeader{
+		font-size: 0.7em;
+	}
+	.dataHeader > div:nth-of-type(1), .dataContainer > div:nth-of-type(1){
+		width:100%;
+	}
+	.dataHeader > div:nth-of-type(1) span:nth-of-type(3), .dataContainer > div:nth-of-type(1) span:nth-of-type(3),.dataHeader > div:nth-of-type(1) span:nth-of-type(2), .dataContainer > div:nth-of-type(1) span:nth-of-type(2){
+		display: none;
+	}
+	.dataHeader > div:nth-of-type(1) span, .dataContainer > div:nth-of-type(1) span{
+		width:50%;
+		text-align: center;
+	}
+	.dataImage{
+		min-width:3rem;
+		min-height:3rem;
+		max-width: 3rem;
+		max-height: 3rem;
+		height: 3rem;
+		width:3rem;
+	}
+	.btn-grp{
+		display: none;
+		position: fixed;
+		width:100%;
+		height:20rem;
+		z-index: 2;
+		background: white;
+		top:50%;
+		left: 0rem;
+		transform: translateY(-50%);
+		border-radius: 0.3rem;
+		flex-direction: column;
+	}
+	.more-modal{
+		display: unset;
+	}
+	.buttonContainer{
+		flex-direction: row;
+		width:100%;
+		padding: 0rem 1rem;
+	}
+	.button{
+		width:2.5em;
+		height: 2.5em;
+	}
+	.button img{
+		width: 100%;
+		height: 100%;
+	}
+	.edit img{
+		width:90%;
+		height: 80%
+}
+	.more-modal img{
+		height: 1em;
+	}
+	.closeBtnGrp{
+	display:flex;
+		margin: 0rem;
+}
+	.create{
+		width:10rem;
+	}
+	.logout{
+		width: 10rem;
+	}
+	.create img{
+		width: 1rem;
+		height: 1rem;
+}
+	#rentalCreateForm, #hostelCreateForm, #standaloneCreateForm, #workspaceCreateForm, #communityCreateForm, .editForm{
+		width:96%;
+		left:2%;
+}
+	label{
+		width:100%;
+	}
+	.formtext > .inputContainer,.textfieldContainer{
+		flex-direction: column;
+		/*! align-items: flex-start; */
+		width: 85%;
+		text-align: left;
+	}
+	.input,.textarea{
+		width: 100%;
+	}
+	.imageContainer{
+		margin: 0rem 0.4rem;
+	}
+	.additionContainer{
+		width:100%;
+	}
+	.modal{
+		width: 98%;
+		left:1%;
+	}
+	.list{
+		margin-left:-2rem
+	}
+	.pagination{
+		width:85%;
+		margin: 2rem auto 1rem auto;
+	}
+}
+@media only screen and (min-width:400px) and (max-width:499px){
+	h1{
+		font-size:1.5em
+	}
+	.item1{
+		flex-direction: column;
+		align-items: center;
+		border-bottom: 0px;
+		height: 2.5rem
+	}
+	.user{
+		display: none;
+	}
+	.header{
+		flex-direction: column;		
+		align-items: center;
+		height: 15rem;
+	}
+	.greetings{
+		width: 100%;
+		align-items: center;
+		margin: 0rem;
+	}
+	.welcome{
+		font-size: 1.2em;
+	}
+	.notificationGroup{
+		flex-direction: row;
+		width: 100%;
+		height: 11rem;
+		margin: 1rem 0rem;
+	}
+	.notification{		
+	width: 30%;
+	height: 80%;
+	padding: 1rem;
+	}
+	.notificationIcon{
+		width:1.7rem;
+		height:1.7rem;
+	}
+	.figure{
+		font-size: 1.2em;
+	}
+	.tabcontent > .shortcuts{
+		padding: 0rem 0.25rem;
+		margin: 1rem 0rem;
+		justify-content: center;
+	}
+	.shortcuts{
+		justify-content:flex-start;
+	}
+	.innerTabButton{
+		font-size: 0.64em;
+		margin: 0.1rem;
+		word-wrap: anywhere;
+		background: #f0f0f0;
+		border-radius: 0.1rem 0.5rem;
+		border: 0px;
+	}
+	.activeInnerTab{
+		background: burlywood;
+		border:0px;
+		color: #fff;
+	}
+	#createRental, #createHostel, #createStandalone, #createWorkspace, #createCommunity {
+	font-size: 0.65em;
+		height: 2rem;
+	width: 6rem;
+}
+	.dataContainer,.dataHeader{
+		font-size: 0.85em;
+	}
+	.dataHeader > div:nth-of-type(1), .dataContainer > div:nth-of-type(1){
+		width:100%;
+	}
+	.dataHeader > div:nth-of-type(1) span:nth-of-type(3), .dataContainer > div:nth-of-type(1) span:nth-of-type(3),.dataHeader > div:nth-of-type(1) span:nth-of-type(2), .dataContainer > div:nth-of-type(1) span:nth-of-type(2){
+		display: none;
+	}
+	.dataHeader > div:nth-of-type(1) span, .dataContainer > div:nth-of-type(1) span{
+		width:50%;
+		text-align: center;
+	}
+	.dataImage{
+		min-width:3rem;
+		min-height:3rem;
+		max-width: 3rem;
+		max-height: 3rem;
+		height: 3rem;
+		width:3rem;
+	}
+	.btn-grp{
+		display: none;
+		position: fixed;
+		width:100%;
+		height:20rem;
+		z-index: 2;
+		background: white;
+		top:50%;
+		left: 0rem;
+		transform: translateY(-50%);
+		border-radius: 0.3rem;
+		flex-direction: column;
+	}
+	.more-modal{
+		display: unset;
+	}
+	.buttonContainer{
+		flex-direction: row;
+		width:100%;
+		padding: 0rem 1rem;
+	}
+	.closeBtnGrp{
+	display:flex;
+		margin: 0rem;
+}
+	.create{
+		width:10rem;
+	}
+	.create img{
+		width: 1rem;
+		height: 1rem;
+}
+	#rentalCreateForm, #hostelCreateForm, #standaloneCreateForm, #workspaceCreateForm, #communityCreateForm, .editForm{
+		width:96%;
+		left:2%;
+}
+	label{
+		width:100%;
+	}
+	.formtext > .inputContainer,.textfieldContainer{
+		flex-direction: column;
+		/*! align-items: flex-start; */
+		width: 85%;
+		text-align: left;
+	}
+	.input,.textarea{
+		width: 100%;
+	}
+	.imageContainer{
+		margin: 0rem 0.4rem;
+	}
+	.additionContainer{
+		width:100%;
+	}
+	.modal{
+		width: 98%;
+		left:1%;
+	}
+	.list{
+		margin-left:-2rem
+	}
+	.pagination{
+		width:85%;
+		margin: 2rem auto 1rem auto;
+	}
+}
+@media only screen and (min-width:500px) and (max-width:767px){
+		h1{
+		font-size:1.5em
+	}
+	.item1{
+		flex-direction: column;
+		align-items: center;
+		border-bottom: 0px;
+		height: 2.5rem
+	}
+	.user{
+		display: none;
+	}
+	.header{
+		flex-direction: column;		
+		align-items: center;
+		height: 15rem;
+	}
+	.greetings{
+		width: 100%;
+		align-items: center;
+		margin: 0rem;
+	}
+	.welcome{
+		font-size: 1.2em;
+	}
+	.notificationGroup{
+		flex-direction: row;
+		width: 100%;
+		height: 11rem;
+		margin: 1rem 0rem;
+	}
+	.notification{		
+	width: 30%;
+	height: 80%;
+	padding: 1rem;
+	}
+	.notificationIcon{
+		width:1.7rem;
+		height:1.7rem;
+	}
+	.figure{
+		font-size: 1.2em;
+	}
+	.tabcontent > .shortcuts{
+		padding: 0rem 0.25rem;
+		margin: 1rem 0rem;
+		justify-content: center;
+	}
+	.shortcuts{
+		justify-content:flex-start;
+	}
+	.innerTabButton{
+		font-size: 0.8em;
+		margin: 0.1rem;
+		word-wrap: anywhere;
+		background: #f0f0f0;
+		border-radius: 0.1rem 0.5rem;
+		border: 0px;
+	}
+	.activeInnerTab{
+		background: burlywood;
+		border:0px;
+		color: #fff;
+	}
+	#createRental, #createHostel, #createStandalone, #createWorkspace, #createCommunity {
+	font-size: 0.8em;
+		height: 2.5rem;
+	width: 7rem;
+}
+	.dataContainer,.dataHeader{
+		font-size: 0.9em;
+	}
+	.dataHeader > div:nth-of-type(1), .dataContainer > div:nth-of-type(1){
+		width:100%;
+	}
+	.dataHeader > div:nth-of-type(1) span:nth-of-type(3), .dataContainer > div:nth-of-type(1) span:nth-of-type(3),.dataHeader > div:nth-of-type(1) span:nth-of-type(2), .dataContainer > div:nth-of-type(1) span:nth-of-type(2){
+		display: none;
+	}
+	.dataHeader > div:nth-of-type(1) span, .dataContainer > div:nth-of-type(1) span{
+		width:50%;
+		text-align: center;
+	}
+	.dataImage{
+		min-width:4rem;
+		min-height:4rem;
+		max-width: 4rem;
+		max-height: 4rem;
+		height: 4rem;
+		width:4rem;
+	}
+	.btn-grp{
+		display: none;
+		position: fixed;
+		width:80%;
+		height:20rem;
+		z-index: 2;
+		background: white;
+		top:50%;
+		left: 10%;
+		transform: translateY(-50%);
+		border-radius: 0.3rem;
+		flex-direction: column;
+	}
+	.more-modal{
+		display: unset;
+	}
+	.buttonContainer{
+		flex-direction: row;
+		width:100%;
+		padding: 0rem 1rem;
+	}
+	.closeBtnGrp{
+	display:flex;
+		margin: 0rem;
+}
+	.create{
+		width:10rem;
+	}
+	.create img{
+		width: 1rem;
+		height: 1rem;
+}
+	#rentalCreateForm, #hostelCreateForm, #standaloneCreateForm, #workspaceCreateForm, #communityCreateForm, .editForm{
+		width:80%;
+		left:10%;
+}
+	label{
+		width:80%;
+	}
+	.formtext > .inputContainer,.textfieldContainer{
+		flex-direction: column;
+		/*! align-items: flex-start; */
+		width: 85%;
+		text-align: left;
+	}
+	.input,.textarea{
+		width: 80%;
+	}
+	.imageContainer{
+		margin: 0rem 0.4rem;
+	}
+	.additionContainer{
+		width:100%;
+	}
+	.modal{
+		width: 98%;
+		left:1%;
+	}
+	.list{
+		margin-left:-2rem
+	}
+	.pagination{
+		width:65%;
+		margin: 3rem auto 1rem auto;
+	}
+}
+@media only screen and (min-width:768px) and (max-width:991px){
+			h1{
+		font-size:1.5em
+	}
+	.item1{
+		flex-direction: column;
+		align-items: center;
+		border-bottom: 0px;
+		height: 2.5rem
+	}
+	.user{
+		display: none;
+	}
+	.header{
+		flex-direction: row;		
+		align-items: center;
+		height: 15rem;
+	}
+	.greetings{
+		width: 25%;
+		align-items: center;
+		margin: 0rem;
+	}
+	.welcome{
+		font-size: 1.2em;
+	}
+	.notificationGroup{
+		flex-direction: row;
+		width: 50%;
+		height: 11rem;
+		margin: 1rem 0rem;
+	}
+	.notification{		
+	width: 30%;
+	height: 80%;
+	padding: 1rem;
+	}
+	.notificationIcon{
+		width:1.7rem;
+		height:1.7rem;
+	}
+	.figure{
+		font-size: 1.2em;
+	}
+	.tabcontent > .shortcuts{
+		padding: 0rem 0.25rem;
+		margin: 1rem 0rem;
+		justify-content: center;
+	}
+	.shortcuts{
+		justify-content:flex-start;
+	}
+	.innerTabButton{
+		font-size: 0.9em;
+		margin: 0.2rem;
+		word-wrap: anywhere;
+		background: #f0f0f0;
+		border-radius: 0.1rem 0.5rem;
+		border: 0px;
+	}
+	.activeInnerTab{
+		background: burlywood;
+		border:0px;
+		color: #fff;
+	}
+	#createRental, #createHostel, #createStandalone, #createWorkspace, #createCommunity {
+	font-size: 0.85em;
+		height: 2.5rem;
+	width: 7rem;
+}
+	.dataContainer,.dataHeader{
+		font-size: 1em;
+	}
+	.dataHeader > div:nth-of-type(1), .dataContainer > div:nth-of-type(1){
+		width:100%;
+	}
+	.dataHeader > div:nth-of-type(1) span:nth-of-type(3), .dataContainer > div:nth-of-type(1) span:nth-of-type(3),.dataHeader > div:nth-of-type(1) span:nth-of-type(2), .dataContainer > div:nth-of-type(1) span:nth-of-type(2){
+		display: none;
+	}
+	.dataHeader > div:nth-of-type(1) span, .dataContainer > div:nth-of-type(1) span{
+		width:50%;
+		text-align: center;
+	}
+	.dataImage{
+		min-width:4rem;
+		min-height:4rem;
+		max-width: 4rem;
+		max-height: 4rem;
+		height: 4rem;
+		width:4rem;
+	}
+	.btn-grp{
+		display: none;
+		position: fixed;
+		width:60%;
+		height:20rem;
+		z-index: 2;
+		background: white;
+		top:50%;
+		left: 20%;
+		transform: translateY(-50%);
+		border-radius: 0.3rem;
+		flex-direction: column;
+	}
+	.more-modal{
+		display: unset;
+	}
+	.buttonContainer{
+		flex-direction: row;
+		width:100%;
+		padding: 0rem 1rem;
+	}
+	.closeBtnGrp{
+	display:flex;
+		margin: 0rem;
+}
+	.create{
+		width:10rem;
+	}
+	.create img{
+		width: 1rem;
+		height: 1rem;
+}
+	#rentalCreateForm, #hostelCreateForm, #standaloneCreateForm, #workspaceCreateForm, #communityCreateForm, .editForm{
+		width:60%;
+		left:20%;
+}
+	label{
+		width:80%;
+	}
+	.formtext > .inputContainer,.textfieldContainer{
+		flex-direction: column;
+		/*! align-items: flex-start; */
+		width: 100%;
+		text-align: left;
+	}
+	.input,.textarea{
+		width: 80%;
+	}
+	.imageContainer{
+		margin: 0rem 0.4rem;
+	}
+	.additionContainer{
+		width:100%;
+	}
+	.modal{
+		width: 98%;
+		left:1%;
+	}
+	.list{
+		margin-left:-2rem
+	}
+	.pagination{
+		width:65%;
+		margin: 3rem auto 1rem auto;
+	}
+}
+@media only screen and (min-width:992px) and (max-width:1199px){
+				h1{
+		font-size:1.5em
+	}
+	.item1{
+		flex-direction: column;
+		align-items: center;
+		border-bottom: 0px;
+		height: 2.5rem
+	}
+	.user{
+		display: none;
+	}
+	.header{
+		flex-direction: row;		
+		align-items: center;
+		height: 15rem;
+	}
+	.greetings{
+		width: 25%;
+		align-items: center;
+		margin: 0rem;
+	}
+	.welcome{
+		font-size: 1.2em;
+	}
+	.notificationGroup{
+		flex-direction: row;
+		width: 40%;
+		height: 11rem;
+		margin: 1rem 0rem;
+	}
+	.notification{		
+	width: 30%;
+	height: 80%;
+	padding: 1rem;
+	}
+	.notificationIcon{
+		width:1.7rem;
+		height:1.7rem;
+	}
+	.figure{
+		font-size: 1.2em;
+	}
+	.tabcontent > .shortcuts{
+		padding: 0rem 0.25rem;
+		margin: 1rem 0rem;
+		justify-content: center;
+	}
+	.shortcuts{
+		justify-content:flex-start;
+	}
+	.innerTabButton{
+		font-size: 0.9em;
+		margin: 0.2rem;
+		word-wrap: anywhere;
+		background: #f0f0f0;
+		border-radius: 0.1rem 0.5rem;
+		border: 0px;
+	}
+	.activeInnerTab{
+		background: burlywood;
+		border:0px;
+		color: #fff;
+	}
+	#createRental, #createHostel, #createStandalone, #createWorkspace, #createCommunity {
+	font-size: 0.85em;
+		height: 2.5rem;
+	width: 7rem;
+}
+	.dataContainer,.dataHeader{
+		font-size: 1em;
+	}
+	.dataHeader > div:nth-of-type(1), .dataContainer > div:nth-of-type(1){
+		width:100%;
+	}
+	.dataHeader > div:nth-of-type(1) span:nth-of-type(3), .dataContainer > div:nth-of-type(1) span:nth-of-type(3),.dataHeader > div:nth-of-type(1) span:nth-of-type(2), .dataContainer > div:nth-of-type(1) span:nth-of-type(2){
+		display: none;
+	}
+	.dataHeader > div:nth-of-type(1) span, .dataContainer > div:nth-of-type(1) span{
+		width:50%;
+		text-align: center;
+	}
+	.dataImage{
+		min-width:4rem;
+		min-height:4rem;
+		max-width: 4rem;
+		max-height: 4rem;
+		height: 4rem;
+		width:4rem;
+	}
+	.btn-grp{
+		width:50%;
+	}
+	.create{
+		width:10rem;
+	}
+	.create img{
+		width: 1rem;
+		height: 1rem;
+}
+	#rentalCreateForm, #hostelCreateForm, #standaloneCreateForm, #workspaceCreateForm, #communityCreateForm, .editForm{
+		width:60%;
+		left:20%;
+}
+	label{
+		width:100%;
+	}
+	.formtext > .inputContainer,.textfieldContainer{
+		flex-direction: column;
+		/*! align-items: flex-start; */
+		width: 50%;
+		text-align: left;
+	}
+	.input,.textarea{
+		width: 100%;
+	}
+	.imageContainer{
+		margin: 0rem 0.4rem;
+	}
+	.additionContainer{
+		width:100%;
+	}
+	.modal{
+		width: 98%;
+		left:1%;
+	}
+	.list{
+		margin-left:-2rem
+	}
+	.pagination{
+		width:65%;
+		margin: 3rem auto 1rem auto;
+	}
+}

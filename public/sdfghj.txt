@@ -1,0 +1,25 @@
+         <!-- @error('first_name')
+             <span class="invalid-feedback" role="alert">
+                 <strong>{{ $error }}</strong>
+             </span>
+         @enderror
+         @error('last_name')
+             <span class="invalid-feedback" role="alert">
+                 <strong>{{ $error }}</strong>
+             </span>
+         @enderror
+         @error('email')
+             <span class="invalid-feedback" role="alert">
+                 <strong>{{ $error }}</strong>
+             </span>
+         @enderror
+         @error('avatar')
+             <span class="invalid-feedback" role="alert">
+                 <strong>{{ $error }}</strong>
+             </span>
+         @enderror
+         @error('password')
+             <span class="invalid-feedback" role="alert">
+                 <strong>{{ $error }}</strong>
+             </span>
+         @enderror -->

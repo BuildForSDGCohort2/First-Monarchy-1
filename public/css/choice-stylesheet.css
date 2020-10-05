@@ -1,0 +1,557 @@
+*{
+  box-sizing:border-box;
+  }
+@font-face{
+           font-family:Headingfont;
+           src:url("../fonts/Audiowide-Regular.ttf");
+           }
+@font-face{
+           font-family:taglinefont;
+           src:url("../fonts/Amaranth-Regular.ttf");
+           }
+@font-face{
+           font-family:Nunito;
+           src:url("../fonts/Nunito-Regular.ttf");
+         }
+@font-face{
+           font-family:Nunito;
+           src:url("../fonts/Nunito-Bold.ttf");
+           font-weight:bold;
+         }
+.navigationlink{
+                   font-family:Nunito;
+                   color:white;
+                   text-decoration:none;
+                   font-size:1.1em;
+                   margin:0rem 2rem 2rem 0rem;
+                   }
+.navigationlink:visited{
+                     color:white;
+                     }
+.navigationlink:focus{
+                    text-decoration:underline;
+                    color:burlywood;
+                    }
+.navigationlink:hover{
+                    text-decoration:underline;
+                    color:burlywood;
+                    }
+.navigationlink:active{
+                     text-decoration:none;
+                     color:green;
+                     }
+.buildlink{
+	  border:0rem;
+    padding:0rem;
+  	background:none;
+    font-family:Nunito;
+    margin:0rem;
+    color:white;
+    font-size:1em;
+    cursor:pointer;
+  }
+.buildlink:visited{
+	color:white;
+}
+.buildlink:focus{
+          text-decoration:underline;
+          color:burlywood;
+					border:0px;
+					outline:0px;
+                    }
+.buildlink:hover{
+          text-decoration:underline;
+          color:burlywood;
+					border:0px;
+					outline:0px;
+                    }
+.buildlink:active{
+                   color:green;
+                     }
+@keyframes heading{
+                    0%{color:snow;}
+                   20%{color:grey;}
+                   40%{color:snow}
+                   60%{color:black;}
+                   80%{color:white;}
+                  100%{color:black;}
+                  }
+@keyframes tagline{
+                    0%{color:sandybrown;}
+                   20%{color:white;}
+                   40%{color:sandybrown;}
+                   60%{color:white;}
+                   80%{color:sandybrown;}
+                  100%{color:white;}
+                  }
+.container{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  z-index:2;
+  width:100%;
+  height:100%;
+}
+[class*="item"]{
+  display:flex;
+  flex-wrap: nowrap;
+}
+
+.item1{
+       width:100%;
+       flex-direction:row;
+       height:2.1rem;
+       margin: 0rem;
+       margin-top: -0.3rem;
+       }
+.item2{
+       display:none;
+       }
+.item3{
+      width:100%;
+      flex-direction:row;
+      height: 2rem;
+      margin-bottom:3rem;
+       }
+.item4{
+       flex-direction:row;
+	     justify-content:center;
+       }
+.item5{
+       display:none;
+       flex-direction:row;
+       flex-wrap:nowrap;
+	     justify-content:space-between;
+       width:20rem;
+       position:absolute;
+       right:0px;
+       top:0px;
+       }
+.item6{
+        flex-direction:row;
+		    justify-content:space-around;
+        width:100%;
+        margin-top:7rem;
+        }
+.item7{
+        display: none;
+        flex-direction:row;
+		    justify-content:center;
+        width:34rem;
+        height:37rem;
+        position: absolute;
+        top: 0rem;
+        }
+
+html{
+   background-image:url("../images/interior2.jpg");
+   background-size:cover;
+   background-position: center;
+	 min-height:100%;
+	 min-width:100%;
+   width:100%;
+	 background-repeat:no-repeat;
+ }
+
+.overlay{
+  	position:fixed;
+    top:0px;
+    left:0px;
+	  z-index:1;
+  	width:100%;
+	  min-width:100%;
+	  min-height:100%;
+	  opacity:0.4;
+	  background-color:black;
+}
+body{
+     margin:0px;
+     }
+.header{
+	animation-name:heading;
+   animation-duration:120s;
+   animation-iteration-count:infinite;
+   animation-timing-function:linear;
+   font-family:Headingfont;
+   color:black;
+   margin:0px;
+   font-weight:100;
+   font-size: 1.7em;
+   }
+.item4 h2{
+   text-decoration:none;
+   font-family:Nunito;
+   color:white;
+   font-weight:100;
+     }
+.tagline{
+	       animation-name:tagline;
+         animation-duration:120s;
+         animation-iteration-count:infinite;
+         animation-timing-function:linear;
+         font-family:taglinefont;
+         color:white;
+		     font-weight:100;
+         margin: 0rem;
+           }
+.linkContainer{
+  display: flex;
+  flex-direction:row;
+  flex-wrap: nowrap;
+  width: 80%;
+  justify-content:space-around;
+  align-items: center;
+}
+.mainlink, .cardlink ,.closelink{
+          background-color:black;
+          font-family:Nunito;
+     		  border-radius:3px;
+          border:1px solid black;
+          opacity:0.9;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: center;
+          align-items: center;
+          padding:0.6rem;
+          width:13rem;
+          height:2.5rem;
+          color: white;
+          text-decoration: none;
+          cursor:pointer;
+          }
+.cardlink{
+         width: 16rem;
+                    }
+.closelink{
+  font-size: 1em;
+  width:14rem;
+}
+
+.cardfooter .mainlink{
+   margin:0rem;
+}
+
+.card{
+	text-align:center;
+	background-color:#f2f2f2;
+	display:none;
+	flex-direction:column;
+	flex-wrap:nowrap;
+	justify-content:space-around;
+	align-items:center;
+	height:100%;
+	width:100%;
+	opacity:1;
+
+}
+.card h2{
+	color:black;
+	font-size:1.3em;
+	font-family:Nunito;
+	font-weight:700;
+	margin-top:0rem;
+	text-decoration:underline;
+}
+.card p{
+	color:black;
+	font-family: Nunito;
+	margin-top:0rem;
+  width:100%;
+  font-size: 1rem;
+}
+.cardfooter{
+  display:flex;
+  flex-direction:row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  width:100%;
+  margin-bottom:0.6rem;
+}
+.icon{
+      width:32px;
+      height:33px;
+      }
+.menuClosed,.menuOpen{
+  font-family:Nunito;
+  border:0px;
+  background:none;
+  font-size:1em;
+  color:white;
+  cursor:pointer;
+}
+.menuOpen{
+  display:none;
+}
+.descriptionImage{
+	width:95%;
+	height:20rem;
+  max-height:75%;
+	margin:0px 0px 5px 0px;
+  object-fit:cover;
+}
+
+@media only screen and (max-width:399px){
+.item1,.item3{
+  justify-content: center;
+}
+.item2{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width:100%;
+  height:2rem;
+  justify-content: center;
+  align-items: center;
+  margin-top:-2rem;
+}
+.item5{
+  opacity:0;
+  transition:opacity 0.4s;
+  background-color:#f2f2f2;
+  flex-direction: column;
+  width:10rem;
+}
+.item6{
+  margin-top:3rem;
+}
+.item7{
+  width:100%;
+  height:37rem;
+}
+.header{
+	font-size:1.5em;
+}
+.tagline{
+	font-size:1em;
+}
+.linkContainer{
+  flex-direction: column;
+  height:10rem;
+}
+.item4 h2{
+  font-size: 1.3em;
+}
+.navigationlink{
+	font-size:0.8em;
+  text-decoration: none;
+  border-bottom: 1px solid #3a3c3e;
+  padding-bottom:0.3rem;
+  width:90%;
+  margin-right: 0rem;
+  color:#3a3c3e;
+}
+.navigationlink:visited{
+  color:#3a3c3e;
+}
+.navigationlink:focus{
+  text-decoration: none;
+  color: burlywood;
+}
+.navigationlink:hover{
+  text-decoration: none;
+  color:burlywood;
+}
+.navigationlink:active{
+  text-decoration: none;
+}
+.descriptionImage{
+  max-height:50%;
+}
+.card{
+	margin-top:1.2rem;
+}
+.card h2{
+	font-size:1em;
+}
+.cardlink, .closelink{
+	font-size:1em;
+  height:2.2rem;
+  width:16rem;
+}
+.cardfooter{
+  flex-direction: column-reverse;
+  height: 7rem;
+  align-items: center;
+}
+
+}
+@media only screen and (min-width:400px) and (max-width:599px){
+.item1,.item3{
+    justify-content: center;
+  }
+.item2{
+  display: flex;
+  margin-bottom: 1rem;
+}
+.item5{
+  opacity:0;
+  transition:opacity 0.4s;
+  background-color:#f2f2f2;
+  flex-direction: column;
+  width:10rem;
+  align-items: center
+}
+.item6{
+  margin-top:5rem;
+}
+.item7{
+  width:98%;
+  height:37rem;
+}
+.item4 h2{
+	font-size:1.4em;
+	color:white;
+}
+.linkContainer{
+  flex-direction: column;
+  height:9rem;
+}
+.navigationlink{
+	font-size:0.8em;
+  text-decoration: none;
+  border-bottom: 1px solid #3a3c3e;
+  padding-bottom:0.3rem;
+  width:90%;
+  margin-right: 0rem;
+  color:#3a3c3e;
+}
+.navigationlink:visited{
+  color:#3a3c3e;
+}
+.navigationlink:focus{
+  text-decoration: none;
+  color: burlywood;
+}
+.navigationlink:hover{
+  text-decoration: none;
+  color:burlywood;
+}
+.navigationlink:active{
+  text-decoration: none;
+}
+.descriptionImage{
+  max-height:50%;
+}
+.card{
+	margin-top:1.2rem;
+  border-radius: 0rem;
+}
+.card h2{
+	font-size:1.1em;
+}
+.cardlink, .closelink{
+	font-size:1em;
+  height:2.2rem;
+  width:16rem;
+}
+.cardfooter{
+  flex-direction: column-reverse;
+  height: 7rem;
+  align-items: center;
+}
+
+}
+@media only screen and (min-width:600px) and (max-width:767px){
+.item2{
+  display: flex;
+  margin-bottom: 1rem;
+
+}
+.item3{
+  margin-bottom: 2rem;
+}
+.item4 h2{
+	font-size:1.4em;
+	color:white;
+}
+.item5{
+  opacity:0;
+  transition:opacity 0.4s;
+  background-color:#f2f2f2;
+  flex-direction: column;
+  width:10rem;
+  align-items: center
+}
+.item6{
+	flex-direction:row;
+}
+.item7{
+  height:37rem;
+}
+.linkContainer{
+  width:95%;
+}
+.navigationlink{
+	font-size:0.8em;
+  text-decoration: none;
+  border-bottom: 1px solid #3a3c3e;
+  padding-bottom:0.3rem;
+  width:90%;
+  margin-right: 0rem;
+  color:#3a3c3e;
+}
+.navigationlink:visited{
+  color:#3a3c3e;
+}
+.navigationlink:focus{
+  text-decoration: none;
+  color: burlywood;
+}
+.navigationlink:hover{
+  text-decoration: none;
+  color:burlywood;
+}
+.navigationlink:active{
+  text-decoration: none;
+}
+.descriptionImage{
+  margin-bottom: 0.1rem;
+}
+.card{
+	margin-top:20px;
+}
+.cardlink{
+  width: 17rem;
+}
+.card h2{
+	font-size:1.1em;
+}
+}
+@media only screen and (min-width:768px) and (max-width:991px){
+.item2{
+	align-items:center;
+	justify-content:center;
+}
+.item5{
+  display:flex;
+  width:15rem;
+}
+.item6{
+	justify-content:center;
+}
+.navigationlink{
+	font-size:1em;
+}
+}
+@media only screen and (min-width:992px) and (max-width:1199px){
+.item2{
+	align-items:center;
+	justify-content:center;
+}
+.item5{
+  display: flex;
+}
+.navigationlink{
+	font-size:1em;
+}
+}
+@media only screen and (min-width:1199px){
+  .item5{
+    display:flex;
+  }
+  .linkContainer{
+    width:45%;
+  }
+}
